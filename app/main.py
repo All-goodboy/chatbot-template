@@ -43,7 +43,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Create a button that opens the web app
     web_app_button = KeyboardButton(
         "Open Hotel OS Web App",
-        web_app=WebAppInfo(url=f"https://your-hugging-face-space-url.hf.space") # IMPORTANT: Replace with your actual URL
+        web_app=WebAppInfo(url=f"https://nssuwan186-Bot-telegram.hf.space/static/index.html") # IMPORTANT: Replace with your actual URL
     )
     keyboard = [[web_app_button]]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
