@@ -8,7 +8,7 @@ from models import Geofence  # ต้องมี models.py ใน project root
 logger = logging.getLogger(__name__)
 
 
-def parse_polygon(polygon_text):
+def parse_polygon(polygon_text: Union[str, List[List[float]]]) -> Optional[Polygon]:
     """
     Parse polygon JSON stored in DB.
     Accept formats:
